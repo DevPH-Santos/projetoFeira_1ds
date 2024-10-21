@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_ds.svg" type="image/x-icon">
+    <title>APS - Análise e Projeto de Sistemas</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <div class="banner">
+        <img src="aps-img/banner_aps.jpeg" alt="">
+    </div>
+
+    <div class="conteudo">
+
+        <div class="right">
+            <h1>Análise e projeto de sistemas</h1>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line2"></div>
+            </div>
+            <p>A disciplina "Análise e Projetos de Sistemas" (APS) é fundamental na formação de profissionais de tecnologia da informação, pois envolve a criação de sistemas de informação que atendem às necessidades de usuários e organizações. Essa disciplina estimula o pensamento crítico e a criatividade dos alunos, abrangendo desde o levantamento de requisitos até o design do sistema, enquanto promove um ambiente colaborativo para discussões e feedback, preparando-os para o impacto dos sistemas de informação na sociedade.</p>
+        </div>
+
+        <div class="left">
+            <img src="aps-img/mulher_projetando.avif" alt="">
+        </div>
+
+    </div>
+
+    <div class="sobre-curso">
+
+        <div class="content-square">
+
+            <div>
+                <i class='bx bxs-stopwatch'></i>
+                <p>Carga horária</p>
+                <h4>100 horas por semestre</h4>
+            </div>
+
+            <div>
+                <i class='bx bxs-calendar'></i>
+                <p>Duração/Semestre</p>
+                <h4>6 semestres</h4>
+            </div>
+
+        </div>
+
+        <div class="detalhes-curso">
+            <div>
+
+                <h3>Área de <br> Atuação</h3>
+                <p>
+                    <p>Análise de Requisitos: Colaborar com diferentes departamentos para identificar e documentar as necessidades dos usuários.</p>
+
+                    <p>Mapeamento de Processos: Analisar e documentar processos de negócios existentes, propondo melhorias e soluções mais eficientes.</p>
+                    
+                    <p>Desenvolvimento de Prototótipos: Criar protótipos de sistemas ou funcionalidades para validação com os usuários antes do desenvolvimento final.</p></p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content-atual">
+
+        <h1>Nosso conteúdo</h1>
+
+        <div>
+
+            <img src="aps-img/levantamento_req.jfif" alt="imagem do que estamos aprendendo">
+
+            <p>A análise de requisitos é uma etapa fundamental no desenvolvimento de sistemas que envolve identificar, documentar e gerenciar as necessidades e expectativas dos stakeholders, incluindo usuários finais, gerentes e desenvolvedores. O objetivo principal é garantir que o sistema a ser desenvolvido atenda às necessidades reais dos usuários e funcione de acordo com as expectativas.</p>
+
+        </div>
+
+
+    </div>
+
+    <div class="quiz-container">
+        <h1>Questionário</h1>
+        <p>Qual das seguintes etapas é fundamental na Análise de Projetos de Sistemas?</p>
+        <form id="quiz-form">
+            <label>
+                <input type="radio" name="question1" value="a">
+                A) Implementação de código
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="b">
+                B) Treinamento de usuários 
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="c">
+                C)Levantamento de requisitos
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="d">
+                D) Manutenção do sistema
+            </label><br><br>
+            <button type="button" onclick="checkAnswer()">Enviar</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script>
+
+        function checkAnswer() {
+            const form = document.getElementById('quiz-form');
+            const result = document.getElementById('result');
+            const selectedAnswer = form.question1.value;
+
+            if (selectedAnswer === "c") {
+                result.textContent = "Correto! A alternativa correta é a letra C!!!";
+                result.style.color = "green";
+            } else {
+                result.textContent = "Incorreto! Tente de novo!!!";
+                result.style.color = "red";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

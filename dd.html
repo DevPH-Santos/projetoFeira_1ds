@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_ds.svg" type="image/x-icon">
+    <title>DD - Design Digital</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <div class="banner">
+        <img src="dd-img/BannerDD-Final.png" alt="">
+    </div>
+
+    <div class="conteudo">
+
+        <div class="right">
+            <h1>Design Digital</h1>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line2"></div>
+            </div>
+            <p>O design digital visa criar soluções visuais e interativas no meio digital, focando em aspectos gráficos,
+                tipografia e cores, além da experiência do usuário e funcionalidade das interfaces.</p>
+        </div>
+
+        <div class="left">
+            <img src="dd-img/Imagem.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="sobre-curso">
+
+        <div class="content-square">
+
+            <div>
+                <i class='bx bxs-stopwatch'></i>
+                <p>Carga horária</p>
+                <h4>100 horas por semestre</h4>
+            </div>
+
+            <div>
+                <i class='bx bxs-calendar'></i>
+                <p>Duração/Semestre</p>
+                <h4>6 Semestres</h4>
+            </div>
+
+        </div>
+
+        <div class="detalhes-curso">
+            <div>
+
+                <h3>Área de <br> Atuação</h3>
+                <p>O designer digital pode atuar em projetos relacionados ao desenvolvimento de aplicativos, edição de
+                    vídeos, criação de games, social media, animação digital, redes sociais, entre diversas outras
+                    possibilidades.</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content-atual">
+
+        <h1>Nosso conteúdo</h1>
+
+        <div>
+
+            <img src="dd-img/Conceitos basicos.jpeg" height="250" width="150" alt="imagem do que estamos aprendendo">
+
+            <p>Os conceitos básicos no design digital incluem multimídia, que combina texto, imagens, áudio e vídeo;
+                hipermídia, que permite navegação não linear entre conteúdos; realidade virtual (RV), que cria ambientes
+                imersivos interativos; e realidade aumentada (RA), que sobrepõe elementos digitais ao mundo físico.
+                Esses conceitos são essenciais para experiências digitais envolventes.</p>
+
+        </div>
+
+        <div>
+
+            <img src="dd-img/Psicologia das cores.jpg" height="250" width="150" alt="imagem do que estamos aprendendo">
+
+            <p>A psicologia das cores no design digital analisa como as cores afetam emoções e comportamentos. Cada cor
+                tem associações específicas: por exemplo, o azul transmite confiança, o verde remete à natureza, e o
+                preto transmite elegância. Designers utilizam essas associações para criar experiências visuais que
+                conectem emocionalmente com os usuários.</p>
+
+        </div>
+
+        <div>
+
+            <img src="dd-img/Tipografia.jpg" height="250" width="150" alt="imagem do que estamos aprendendo">
+
+            <p>A tipografia no design digital envolve a escolha e uso de fontes, tamanhos, espaçamento e cores para
+                criar textos legíveis e visualmente atraentes. Ela ajuda a estabelecer hierarquia e a melhorar a
+                comunicação em interfaces digitais.</p>
+
+        </div>
+
+    </div>
+
+    <div class="quiz-container">
+        <h1>Questionário</h1>
+        <p>1.Qual a sensação da cor azul?</p>
+        <form id="quiz-form">
+            <label>
+                <input type="radio" name="question1" value="a"><!--Está é a resposta certa-->
+                A) Confiança.
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="b">
+                B) Natureza.
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="c">
+                C) Elegância.
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="d">
+                D) Amor.
+            </label><br><br>
+            <button type="button" onclick="checkAnswer()">Enviar</button>
+        </form>
+        <p id="result"></p>
+
+    </div>
+
+    <script>
+
+        function checkAnswer() {
+            const form = document.getElementById('quiz-form');
+            const result = document.getElementById('result');
+            const selectedAnswer = form.question1.value;
+
+            if (selectedAnswer === "a") {
+                result.textContent = "Correto! A alternativa correta é a letra A!!!";
+                result.style.color = "green";
+            } else {
+                result.textContent = "Incorreto! Tente de novo!!!";
+                result.style.color = "red";
+            }
+        }
+
+    </script>
+
+</body>

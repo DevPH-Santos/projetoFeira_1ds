@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_ds.svg" type="image/x-icon">
+    <title>FI - Fundamentos da Informática</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <div class="banner">
+        <img src="fi-img/banner_fi.jfif" alt="">
+    </div>
+
+    <div class="conteudo">
+
+        <div class="right">
+            <h1>Fundamentos da Informática</h1>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line2"></div>
+            </div>
+            <p>A disciplina Fundamentos da Informática (FI) tem como principal objetivo capacitar os alunos com
+                competências e habilidades essenciais para o uso eficiente da tecnologia. O curso aborda conceitos
+                fundamentais de informática, incluindo o funcionamento de hardware, software, sistemas operacionais e
+                redes de computadores. Além disso, busca desenvolver a compreensão crítica das ferramentas tecnológicas,
+                promovendo a aplicação prática em contextos variados e preparando os alunos para enfrentar os desafios
+                do ambiente digital contemporâneo.</p>
+        </div>
+
+        <div class="left">
+            <img src="fi-img/internet.jfif" alt="">
+        </div>
+
+    </div>
+
+    <div class="sobre-curso">
+
+        <div class="content-square">
+
+            <div>
+                <i class='bx bxs-stopwatch'></i>
+                <p>Carga horária</p>
+                <h4>100 horas por semestre</h4>
+            </div>
+
+            <div>
+                <i class='bx bxs-calendar'></i>
+                <p>Duração/Semestre</p>
+                <h4>6 semestres</h4>
+            </div>
+
+        </div>
+
+        <div class="detalhes-curso">
+            <div>
+
+                <h3>Área de <br> Atuação</h3>
+                <p>Técnico de Suporte em TI
+                    Soluciona problemas de hardware, software e rede em empresas. <br><br>
+
+                    Analista de Redes
+                    Gerencia e mantém a infraestrutura de redes, garantindo segurança e desempenho. <br><br>
+
+                    Administrador de Sistemas
+                    Configura e mantém sistemas operacionais em servidores, cuidando da segurança e backup. <br><br>
+
+                    Suporte Técnico em Hardware e Software
+                    Diagnostica e resolve problemas de computadores e software, dando suporte a usuários. <br><br>
+
+                    Consultor de TI
+                    Ajuda empresas a escolher e implementar soluções tecnológicas eficientes. <br><br>
+
+                    Técnico de Montagem e Manutenção de Computadores
+                    Monta, conserta e faz upgrade em computadores, garantindo funcionamento do sistema. <br><br>
+
+                    Assistente de Suporte em Redes
+                    Monitora e mantém redes de computadores, resolvendo problemas de conectividade e configurando
+                    dispositivos.</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content-atual">
+
+        <h1>Nosso conteúdo</h1>
+
+        <div>
+
+            <img src="fi-img/notebook.jfif" alt="imagem do que estamos aprendendo">
+
+            <p>Em Fundamentos da Informática (FI), exploramos os conceitos básicos da tecnologia da informação,
+                abordando o funcionamento de hardware, software, sistemas operacionais e redes de computadores. Os
+                alunos aprendem a utilizar ferramentas de produtividade, como editores de texto e planilhas,
+                desenvolvendo habilidades práticas para resolver problemas do cotidiano e aplicando essas tecnologias de
+                forma crítica. O curso também enfatiza a importância da segurança da informação e a integração da
+                tecnologia em diversas áreas, preparando os estudantes para enfrentar os desafios do ambiente digital
+                moderno.</p>
+
+        </div>
+
+    </div>
+
+    <div class="quiz-container">
+        <h1>Questionário</h1>
+        <p>1. Qual é a função principal de um sistema operacional em um computador?</p>
+        <form id="quiz-form">
+            <label>
+                <input type="radio" name="question1" value="a">
+                A) Gerenciar hardware e recursos do sistema
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="b">
+                B) Navegar na internet
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="c">
+                C) Criar apresentações de slides
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="d">
+                D) Proteger contra vírus e malware
+            </label><br><br>
+            <button type="button" onclick="checkAnswer()">Enviar</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script>
+
+        function checkAnswer() {
+            const form = document.getElementById('quiz-form');
+            const result = document.getElementById('result');
+            const selectedAnswer = form.question1.value;
+
+            if (selectedAnswer === "a") {
+                result.textContent = "Correto! A alternativa correta é a letra A!!!";
+                result.style.color = "green";
+            } else {
+                result.textContent = "Incorreto! Tente de novo!!!";
+                result.style.color = "red";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

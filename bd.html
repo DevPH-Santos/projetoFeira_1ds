@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_ds.svg" type="image/x-icon">
+    <title>BD - BANCO DE DADOS</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <div class="banner">
+        <img src="bd-img/banner_bd.png" alt="" style="width: 100%;">
+    </div>
+
+    <div class="conteudo">
+
+        <div class="right">
+            <h1>Banco de dados</h1>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line2"></div>
+            </div>
+            <p>Bancos de dados são conjuntos de dados que facilitam o armazenamento, a recuperação e a manipulação de
+                dados. Eles são essenciais para diversas aplicações, como sistemas de gestão e redes sociais, e podem
+                ser classificados em tipos como relacionais e não relacionais. E nessa matéria vamos descobrir como
+                montar um banco de dados relacional.</p>
+        </div>
+
+        <div class="left">
+            <img src="bd-img/programador.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="sobre-curso">
+
+        <div class="content-square">
+
+            <div>
+                <i class='bx bxs-stopwatch'></i>
+                <p>Carga horária</p>
+                <h4>100 horas por semestre</h4>
+            </div>
+
+            <div>
+                <i class='bx bxs-calendar'></i>
+                <p>Duração/Semestre</p>
+                <h4>6 semestres</h4>
+            </div>
+
+        </div>
+
+        <div class="detalhes-curso">
+            <div>
+
+                <h3>Área de <br> Atuação</h3>
+                <p>Administrador de Banco de Dados (DBA): Responsável pela gestão, manutenção e segurança dos bancos de
+                    dados.
+                    Desenvolvedor de Banco de Dados: Cria e implementa soluções de banco de dados, escrevendo consultas
+                    e scripts.
+                    Cientista de Dados: Utiliza técnicas estatísticas e de aprendizado de máquina para analisar grandes
+                    volumes de dados.
+                    Engenheiro de Dados: Constrói e mantém arquiteturas de dados, assegurando que os dados estejam
+                    prontos para análise.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content-atual">
+
+        <h1>Nosso conteúdo</h1>
+
+        <div>
+
+            <img src="bd-img/modelo_conceitual.jpg" alt="imagem do que estamos aprendendo">
+
+            <p>É a fase em que se busca representar o mundo real por meio de uma visão simplificada, nele são
+                determinadas quais informações serão armazenadas no Banco de Dados. Nele é utilizado diagramas para
+                facilitar o entendimento do banco de dados</p>
+
+        </div>
+
+        <div>
+
+            <img src="bd-img/modelo_descritivo.png" alt="imagem do que estamos aprendendo">
+
+            <p>Um modelo descritivo de banco de dados é uma representação que descrever as características de um
+                conjunto de dados armazenado. Feito no início do projeto geralmente junto com cliente para descobrir
+                quais são os dados armazenados e seus detalhes.
+            </p>
+
+        </div>
+
+        <div>
+
+            <img src="bd-img/modelo_logico.png" alt="imagem do que estamos aprendendo">
+
+            <p>É a etapa onde serão definidos os padrões e nomes das estruturas do banco de dado sempre levando em conta
+                o modelo conceitual criado anteriormente. É uma evolução do modelo conceitual.</p>
+
+        </div>
+
+        <div>
+
+            <img src="bd-img/dicionario_dados.png" alt="">
+
+            <p>
+
+                É um documento em formado de tabela com a função de documentar de forma clara e fácil o conteúdo do
+                banco de dados
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="quiz-container">
+        <h1>Questionário</h1>
+        <p>1. Qual é o objetivo principal de um modelo lógico em banco de dados?</p>
+        <form id="quiz-form">
+            <label>
+                <input type="radio" name="question1" value="a">
+                A) Definir a estrutura física do banco de dados
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="b">
+                B) Representar a estrutura de dados de forma abstrata
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="c">
+                C) Implementar a segurança do banco de dados
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="d">
+                D) Otimizar o desempenho do banco de dados
+            </label><br><br>
+            <button type="button" onclick="checkAnswer()">Enviar</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script>
+
+        function checkAnswer() {
+            const form = document.getElementById('quiz-form');
+            const result = document.getElementById('result');
+            const selectedAnswer = form.question1.value;
+
+            if (selectedAnswer === "b") {
+                result.textContent = "Correto! A alternativa correta é a letra B!!!";
+                result.style.color = "green";
+            } else {
+                result.textContent = "Incorreto! Tente de novo!!!";
+                result.style.color = "red";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

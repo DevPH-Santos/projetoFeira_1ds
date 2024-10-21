@@ -1,0 +1,24 @@
+O que é BD?
+R: Bancos de dados são conjuntos de dados que facilitam o armazenamento, a recuperação e a manipulação de dados. Eles são essenciais para diversas aplicações, como sistemas de gestão e redes sociais, e podem ser classificados em tipos como relacionais e não relacionais. E nessa matéria vamos descobrir como montar um banco de dados relacional.
+Slogan:
+Banco de Dados: conectando informações e facilitando decisões!
+Carga horária:
+2 aulas por semana de 50min ou seja 1hr 40min por semana ou 6 horas e 40 minutos por mês. Ou 80 horas ano. 
+Possíveis trabalhos da profissão:
+Administrador de Banco de Dados (DBA): Responsável pela gestão, manutenção e segurança dos bancos de dados.
+Desenvolvedor de Banco de Dados: Cria e implementa soluções de banco de dados, escrevendo consultas e scripts.
+Cientista de Dados: Utiliza técnicas estatísticas e de aprendizado de máquina para analisar grandes volumes de dados.
+Engenheiro de Dados: Constrói e mantém arquiteturas de dados, assegurando que os dados estejam prontos para análise.
+
+Explicação inteira as matéria:
+
+Modelo conceitual
+R: É a fase em que se busca representar o mundo real por meio de uma visão simplificada, nele são determinadas quais informações serão armazenadas no Banco de Dados. Nele é utilizado diagramas para facilitar o entendimento do banco de dados
+Modelo descritivo
+R:  um modelo descritivo de banco de dados é uma representação que descrever as características de um conjunto de dados armazenado. Feito no início do projeto geralmente junto com cliente para descobrir quais são os dados armazenados e seus detalhes.
+Modelo logico
+R: É a etapa onde serão definidos os padrões e nomes das estruturas do banco de dado sempre levando em conta o modelo conceitual criado anteriormente. É uma evolução do modelo conceitual.
+Dicionário de dados
+R: É um documento em formado de tabela com a função de documentar de forma clara e fácil o conteúdo do banco de dados
+
+As imgs da explicação da matéria a gente manda depois quando vocês quiserem.

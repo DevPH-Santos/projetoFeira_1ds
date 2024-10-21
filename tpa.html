@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_ds.svg" type="image/x-icon">
+    <title>TPA-Tecnicas de programção de algoritimo</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <div class="banner">
+        <img src="tpa-img/banner-tpa.jpg" alt="">
+    </div>
+
+    <div class="conteudo">
+
+        <div class="right">
+            <h1>Tecnicas de programção de algoritimo</h1>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line2"></div>
+            </div>
+            <p>Na matéria de técnicas de programação e algoritmo aprenderemos sobre a importância de algoritmos e como
+                eles serão úteis como base para um código real. e também aprenderemos sobre o uso de algumas linguagens
+                de programação como C++.
+                .</p>
+        </div>
+
+        <div class="left">
+            <img src="tpa-img/logo -tpa.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="sobre-curso">
+
+        <div class="content-square">
+
+            <div>
+                <i class='bx bxs-stopwatch'></i>
+                <p>Carga horária</p>
+
+                <h4>100 horas por semestre</h4>
+            </div>
+
+            <div>
+                <i class='bx bxs-calendar'></i>
+                <p>Duração/Semestre</p>
+
+                <h4>6 semestres</h4>
+            </div>
+
+        </div>
+
+        <div class="detalhes-curso">
+            <div>
+
+                <h3>Área de <br> Atuação</h3>
+                <p> Programador</p>
+
+                <p>Programador back-end</p>
+
+                <p>Analista de sistemas</p>
+
+                <p>Desenvolvedor de softwares</p>
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content-atual">
+
+        <h1>Nosso conteúdo</h1>
+
+        <div>
+
+            <img src="tpa-img/img-tpa2.jpeg" alt="imagem do que estamos aprendendo">
+
+            <p> Usamos o Flowgorithm, uma ferramenta que, por meio de diagramas e aplicação da lógica, facilita a
+                compreensão e o aprendizado de como funciona a lógica de programação</p>
+
+        </div>
+
+        <div>
+
+            <img src="tpa-img/img-tpa.png" alt="imagem do que estamos aprendendo">
+
+            <p>No C++, que é uma linguagem de programação muito usada, a gente trabalha bastante com lógica de
+                programação. Para ajudar nos ajudar usamos o Flowgorithm, uma ferramenta que facilita a criação de
+                fluxogramas e ajuda a desenvolver nosso raciocínio lógico.</p>
+
+        </div>
+
+
+    </div>
+
+    <div class="quiz-container">
+        <h1>Questionário</h1>
+        <p>1. Para que usamos o flowgorithm?</p>
+        <form id="quiz-form">
+            <label>
+                <input type="radio" name="question1" value="a">
+                A) Para criar estilos em CSS.
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="b">
+                B) Para programar diretamente em C++.
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="c">
+                C) Para desenvolver páginas da web.
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="d">
+                D) Para facilitar a compreensão e o aprendizado da lógica de programação.
+            </label><br><br>
+            <button type="button" onclick="checkAnswer()">Enviar</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script>
+
+        function checkAnswer() {
+            const form = document.getElementById('quiz-form');
+            const result = document.getElementById('result');
+            const selectedAnswer = form.question1.value;
+
+            if (selectedAnswer === "d") {
+                result.textContent = "Correto! A alternativa correta é a letra D!!!";
+                result.style.color = "green";
+            } else {
+                result.textContent = "Incorreto! Tente de novo!!!";
+                result.style.color = "red";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
